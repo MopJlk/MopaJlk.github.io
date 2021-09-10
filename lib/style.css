@@ -1,0 +1,58 @@
+#kruto{
+  color: #ff0000;
+  text-shadow: 0 1px 1px #FF0000, 
+      -2px 2px 0 #ff7f00, 
+      -4px 4px 0 #ffff00,
+      -5px 5px 0 #00ff00,
+      -7px 7px 0 #0000ff,
+      -9px 9px 0 #4b0082,
+      -10px 10px 0 #9400d3;
+}
+p {
+  margin: 40px auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5px;
+}
+#krutoi{
+color: #fff;
+
+text-shadow: 3px 3px 20px #ff99cc,
+    -2px 1px 30px #ff99cc;
+}
+#krutooi{
+color: #fff;
+
+text-shadow: 3px 3px 20px #2cee67,
+    -2px 1px 30px #2cee68;
+}
+p {
+  transform: skew(40deg)rotate(-10deg)rotateX(50deg)translate3d(0, 0, 0);
+  -webkit-perspective: 100px;
+  perspective: 100px;
+}
+
+p::before {
+  text-shadow: 0 2px 3px #747474, 
+      -3px 3px 1px #222, 
+      -6px 5px 1px #474747, 
+      -9px 7px 1px #747474,
+      -12px 9px 1px #565656,
+      -15px 11px 1px #343434,
+      -22px 15px 1px #171717;
+}
+
+p:before,
+p:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: attr(data-text)
+}
+
+p:after {
+  color: #edc;
+}
